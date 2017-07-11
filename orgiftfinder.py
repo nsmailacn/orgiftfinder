@@ -52,7 +52,7 @@ def makeResult(subclass):
 
     #data = json.dumps(subclass)
 	
-	data = {'basicCard' : {'title': 'title', 'formattedText': 'formatted title.', 'image': {'url': 'https://www.google.com/search?q=jeans','accessibilityText': 'Image text'}}}
+    data = {'basicCard' : {'title': 'title', 'formattedText': 'formatted title.', 'image': {'url': 'https://www.google.com/search?q=jeans','accessibilityText': 'Image text'}}}
 	
     speech = "First few results are as follows"
 
@@ -62,7 +62,7 @@ def makeResult(subclass):
     return {
         "speech": speech,
         "displayText": speech,
-		"data": data
+		"data": data,
         "source": "ordemoapp2"
     }
 
