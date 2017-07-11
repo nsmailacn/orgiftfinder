@@ -33,9 +33,8 @@ def processRequest(req):
     result = req.get("result")
     parameters = result.get("parameters")
     subclass = parameters.get("subclass")
-    if searchText is None:
+    if subclass is None:
         return {}
-    #strTxt = 'LTTextLineHorizontal:contains("' + str(searchText) + '")'
 
     res = makeResult(subclass)
     return res
